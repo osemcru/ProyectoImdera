@@ -28,17 +28,18 @@ try {
             $sql .= "'" . $arrayAsignacion[count($arrayAsignacion) - 1] . "');";
 
             echo $result = mysqli_query(conexion(), $sql);
-            // echo $sql;
+            //echo $sql;
             break;
         case "2":
 
             $sql = "update " . $clase . " set ";
-            for ($index2 = 1; $index2 < count($arrayValor)-1; $index2++) {
+            for ($index2 = 1; $index2 < count($arrayValor); $index2++) {
                 $sql .= $arrayValor[$index2-1] . " = '" . $arrayAsignacion[$index2]."', ";
             }
             $sql .= $arrayValor[count($arrayValor)-1] . " = '" . $arrayAsignacion[count($arrayAsignacion)-1]."' ";
             $sql.=" where ".$primaria." = '".$arrayAsignacion[0]."' ";
             echo $result = mysqli_query(conexion(), $sql);
+            //echo $sql;
             break;
         case "3":
             $sql ="delete from ".$clase." where ".$primaria." = '".$arrayAsignacion[0]."'";
