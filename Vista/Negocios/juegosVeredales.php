@@ -109,15 +109,31 @@
         <div class="content-wrapper">
             <div class="container-fluid">
 
-                <h1>Apoyos Economicos</h1>
+                <h1>Deporte Social Comunitario - Juegos Veredales</h1>
                 <hr>
                 <center>
                     <div class="row">
-
+                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="deporteSocialComunitario.php" >Consolidado del programa</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="juegosComunales.php" >Juegos comunales</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="juegosVeredales.php" >Juegos veredales</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoOrganizacionesComunitarias.php" >Apoyo a organizaciones comunitarias</a>  </div>
+                        <br>
+                        <br>
                         <div id="tipo1" class="col-md-4">  <a data-toggle="modal" class="btn btn-outline-success"   data-target="#modalRegistro" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrar Nuevo&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
-               
                         <br>
                     </div>
+
+
+
+
+
+
 
 
                 </center>
@@ -385,4 +401,8 @@
 </body>
 
 </html>
+
+
+
+
 

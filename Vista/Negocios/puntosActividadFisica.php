@@ -67,22 +67,22 @@ include '../../Herramientas/Combo.php';
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a id='z' href="mantenimiento1.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
+                                <a id='z' href="mantenimiento.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
                             </li>
                             <li>
-                                <a id='z' href="depEscolar1.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
+                                <a id='z' href="deporteEscolar.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
                             </li>
                             <li>
-                                <a id='z' href="recreandoComunidad1.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
+                                <a id='z' href="recreandoComunidad.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
                             </li>
                             <li>
-                                <a id='z' href="actividadF1.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
+                                <a id='z' href="actividadFisicaYHabitos.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
                             </li>
                             <li>
-                                <a id='z' href="deporteSocialC1.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
+                                <a id='z' href="deporteSocialComunitario.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
                             </li>
                             <li>
-                                <a id='z' href="apoyoAOrg1.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
+                                <a id='z' href="apoyoAOrganizacionesDeportivas.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
                             </li>
                         </ul>
 
@@ -137,16 +137,16 @@ include '../../Herramientas/Combo.php';
                 <hr>
                 <center>
                     <div class="row">
-                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="actividadF1.php" >Consolidado del programa</a>  </div>
+                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="actividadFisicaYHabitos.php" >Consolidado del programa</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="actividadF2.php" >Hábitos y estilos de vida saludable</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="habitosYEstilosDeVidaSaludables.php" >Hábitos y estilos de vida saludable</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="actividadF3.php" >Puntos de actividad física</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="puntosActividadFisica.php" >Puntos de actividad física</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="actividadF4.php" >Ciclo vías y ciclo paseos</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="cicloviasYCiclopaseos.php" >Ciclo vías y ciclo paseos</a>  </div>
                         <br>
                         <br>
                         <div id="tipo1" class="col-md-4">  <a data-toggle="modal" class="btn btn-outline-success"   data-target="#modalRegistro" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrar Nuevo&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>

@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<?php
-include '../../Herramientas/Herramientas.php';
-include '../../Herramientas/Conexion.php';
-include '../../Herramientas/Combo.php';
-?>
 <html lang="en">
 
     <head>
@@ -12,7 +7,7 @@ include '../../Herramientas/Combo.php';
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>IMDERA</title>
+      <title>IMDERA</title>
         <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- Custom styles for this template-->     
@@ -26,7 +21,7 @@ include '../../Herramientas/Combo.php';
         <link rel="stylesheet" type="text/css" href="../../Recursos/librerias/alertifyjs/css/themes/default.css">
 
         <script src="../../Recursos/librerias/jquery-3.2.1.min.js"></script>
-        <script src="../../Controlador/CtlSuperate.js"></script>
+        <script src="../../Controlador/CtlMesNinez.js"></script>
         <script src="../../Recursos/librerias/bootstrap/js/bootstrap.js"></script>
         <script src="../../Recursos/librerias/alertifyjs/alertify.js"></script>
 
@@ -39,7 +34,6 @@ include '../../Herramientas/Combo.php';
         <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
         <script src="../../js/sb-admin.min.js"></script>
         <script src="../../js/sb-admin-datatables.min.js"></script>
-
 
 
     </head>
@@ -67,22 +61,22 @@ include '../../Herramientas/Combo.php';
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a id='z' href="mantenimiento1.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
+                                <a id='z' href="mantenimiento.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
                             </li>
                             <li>
-                                <a id='z' href="depEscolar1.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
+                                <a id='z' href="deporteEscolar.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
                             </li>
                             <li>
-                                <a id='z' href="recreandoComunidad1.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
+                                <a id='z' href="recreandoComunidad.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
                             </li>
                             <li>
-                                <a id='z' href="actividadF1.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
+                                <a id='z' href="actividadFisicaYHabitos.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
                             </li>
                             <li>
-                                <a id='z' href="deporteSocialC1.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
+                                <a id='z' href="deporteSocialComunitario.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
                             </li>
                             <li>
-                                <a id='z' href="apoyoAOrg1.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
+                                <a id='z' href="apoyoAOrganizacionesDeportivas.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
                             </li>
                         </ul>
 
@@ -133,24 +127,40 @@ include '../../Herramientas/Combo.php';
         <div class="content-wrapper">
             <div class="container-fluid">
 
-                <h1>Deporte Escolar - Superate Intercolegiados</h1>
+                <h1>Recreando Comunidad - Mes de la Niñez</h1>
                 <hr>
                 <center>
                     <div class="row">
-
-                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="depEscolar1.php" >Consolidado del programa</a>  </div>
+                        <div id="tipo1" class="col-md-4" >  <a class="btn btn-primary" href="recreandoComunidad.php" >&nbsp;&nbsp;&nbsp;&nbsp;Consolidado del programa&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="depEscolar2.php" >Escuelas deportivas</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="programaAdultoMayor.php" >&nbsp;&nbsp;&nbsp;Programa del adulto mayor&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="depEscolar3.php" >Superate intercolegiados</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreacionEnComunas.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recreación en comunas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1" class="col-md-4">  <a data-toggle="modal" class="btn btn-outline-success"   data-target="#modalRegistro" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrar Nuevo&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="visitasAEscenarios.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visitas a escenarios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
-
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoCentrosPenitenciarios.php" >Apoyo a centros penitenciarios</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="mesDeLaNinez.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mes de la niñez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="vacacionesRecreativas.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vacaciones recreativas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="eventosRecreativos.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventos recreativos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="moviteca.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moviteca&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <br>
+                        <br>
+                        <div id="tipo1" class="col-md-4">  <a data-toggle="modal" class="btn btn-outline-success"   data-target="#modalRegistro" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrar Nuevo&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                     </div>
+
 
 
                 </center>
@@ -159,9 +169,11 @@ include '../../Herramientas/Combo.php';
                 <br>
 
 
-                <div id="tablaSuperate">
-                </div>
 
+
+
+               <div id="tablaMesNinez" >
+                    </div>
             </div>
             <!-- /.container-fluid-->
             <!-- /.content-wrapper-->
@@ -235,28 +247,44 @@ include '../../Herramientas/Combo.php';
                 <div class="modal-body">
                     <form>
                         <label>ID</label>
-                        <input type="text" name="" id="idSuperateA" class="form-control input-sm" disabled="disable">
-                        <label>0 a 5</label>
-                        <input type="number" name="" id="ceroAcincoA" class="form-control input-sm">
-                        <label>6 a 12</label>
-                        <input type="number" name="" id="seisAdoceA" class="form-control input-sm">
-                        <label>13 a 17</label>
-                        <input type="number" name="" id="treceAsieteA" class="form-control input-sm">
-                        <label>Deporte</label>
-                        <select  id="idDeporteA" class="form-control input-sm">
-                            <option value="opcionDeporte">Seleccione un deporte</option>
-                            <?php
-                            $datos = comboListar("deporte");
-                            for ($index = 0; $index < count($datos); $index++) {
-                                for ($index1 = 0; $index1 < 1; $index1++) {
-                                    ?>
-                                    <option value="<?php echo $datos[$index][$index1] ?>">
-                                        <?php echo $datos[$index][$index1 + 1] ?></option>
-                                    <?php
-                                }
-                            }
-                            ?>
+                        <input type="text" name="" id="idVisitaEscenarios" class="form-control input-sm" disabled="disable">
+                        <label>Nombre de la organizacion</label>
+                        <input type="text" name="" id="nombreA" class="form-control input-sm">
+                        <label>Nombre del escenario</label>
+                        <input type="text" name="" id="lugarA" class="form-control input-sm">
+                        <label>Mes</label>
+                        <input type="number" name="" id="mesA" class="form-control input-sm">
+                        <label>Dia</label>
+                        <input type="number" name="" id="diaA" class="form-control input-sm">
+                        <label>Año</label>
+                        <input type="number" name="" id="anoA" class="form-control input-sm">
+                        <label>Cero a Cinco</label>
+                        <input type="number" name="" id="ceroCincoA" class="form-control input-sm">
+                        <label>Seis a Doce</label>
+                        <input type="number" name="" id="seisDoceA" class="form-control input-sm">
+                        <label>Trece a Diecisiete</label>
+                        <input type="number" name="" id="treceDiecisieteA" class="form-control input-sm">
+                        <label>Dieciocho a Ventiocho</label>
+                        <input type="number" name="" id="dieciochoVentiochoA" class="form-control input-sm">
+                        <label>Ventiocho +</label>
+                        <input type="number" name="" id="ventiochoMasA" class="form-control input-sm">
+                        <label>comuna</label>
+                        <select class="form-control input-sm"  id="comunaA">
+                            <option value="opcionComuna">Seleccione una comuna</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="Vereda">Vereda</option>
                         </select>
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -281,27 +309,42 @@ include '../../Herramientas/Combo.php';
                     <h4 class="modal-title" id="myModalLabel">Registrar Datos</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <label>0 a 5</label>
-                        <input type="number" name="" id="ceroAcinco" class="form-control input-sm">
-                        <label>6 a 12</label>
-                        <input type="number" name="" id="seisAdoce" class="form-control input-sm">
-                        <label>13 a 17</label>
-                        <input type="number" name="" id="treceAsiete" class="form-control input-sm">
-                        <label>Deporte</label>
-                        <select  id="idDeporte" class="form-control input-sm">
-                            <option value="opcionDeporte">Seleccione un deporte</option>
-                            <?php
-                            $datos = comboListar("deporte");
-                            for ($index = 0; $index < count($datos); $index++) {
-                                for ($index1 = 0; $index1 < 1; $index1++) {
-                                    ?>
-                                    <option value="<?php echo $datos[$index][$index1] ?>">
-                                        <?php echo $datos[$index][$index1 + 1] ?></option>
-                                    <?php
-                                }
-                            }
-                            ?>
+             <form>
+                        <label>Nombre de la actividad</label>
+                        <input type="text" name="" id="nombre" class="form-control input-sm">
+                        <label>Sitio</label>
+                        <input type="text" name="" id="lugar" class="form-control input-sm">
+                        <label>Mes</label>
+                        <input type="number" name="" id="mes" class="form-control input-sm">
+                        <label>Dia</label>
+                        <input type="number" name="" id="dia" class="form-control input-sm">
+                        <label>Año</label>
+                        <input type="number" name="" id="ano" class="form-control input-sm">
+                        <label>Cero a Cinco</label>
+                        <input type="number" name="" id="ceroCinco" class="form-control input-sm">
+                        <label>Seis a Doce</label>
+                        <input type="number" name="" id="seisDoce" class="form-control input-sm">
+                        <label>Trece a Diecisiete</label>
+                        <input type="number" name="" id="treceDiecisiete" class="form-control input-sm">
+                        <label>Dieciocho a Ventiocho</label>
+                        <input type="number" name="" id="dieciochoVentiocho" class="form-control input-sm">
+                        <label>Ventiocho +</label>
+                        <input type="number" name="" id="ventiochoMas" class="form-control input-sm">
+                        <label>comuna</label>
+                        <select class="form-control input-sm"  id="comuna">
+                            <option value="opcionComuna">Seleccione una comuna</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="Vereda">Vereda</option>
                         </select>
                     </form>
                 </div>
@@ -316,7 +359,9 @@ include '../../Herramientas/Combo.php';
 
 
 
-
+  
+    <!-- Custom scripts for this page-->
+    <!-- Toggle between fixed and static navbar-->
     <script>
         $('#toggleNavPosition').click(function () {
             $('body').toggleClass('fixed-nav');
@@ -333,47 +378,66 @@ include '../../Herramientas/Combo.php';
         });
 
     </script>
-    <script type="text/javascript">
+
+     <script type="text/javascript">
         $(document).ready(function () {
-            $('#tablaSuperate').load('../Tablas/tablaEscenario.php', {tabla: 'superateintercolegiados', Eliminar: 'NO', Editar: 'SI'});
+            $('#tablaMesNinez').load('../Tablas/tablaEscenario.php', {tabla: 'mesNinez', Eliminar: 'SI', Editar: 'SI'});
         });
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#registradatos').click(function () {
-                ceroacinco = $('#ceroAcinco').val();
-                seisadoce = $('#seisAdoce').val();
-                treceadiecisiete = $('#treceAsiete').val();
-                deporte = $('#idDeporte').val();
-                if (ceroacinco === "" || seisadoce === "" || treceadiecisiete === "" || deporte === 'opcionDeporte') {
+                nombre = $('#nombre').val();
+                lugar = $('#lugar').val();
+                mes = $('#mes').val();
+                dia = $('#dia').val();
+                ano = $('#ano').val();
+                cerocinco = $('#ceroCinco').val();
+                seisdoce = $('#seisDoce').val();
+                trecediecisiete = $('#treceDiecisiete').val();
+                dieciochoventiocho = $('#dieciochoVentiocho').val();
+                ventiochomas = $('#ventiochoMas').val();
+                comuna = $('#comuna').val();
+                tipoevento = 'mesNinez';
+                if (nombre === "" || lugar === "" || dia === "" || mes === "" || ano === "" || cerocinco === "" || seisdoce === "" || trecediecisiete === "" || dieciochoventiocho === "" ||
+                        ventiochomas === "" || comuna === "opcionComuna") {
                     alertify.error("Por favor llene todos los campos");
                 } else {
-                    lista = [ceroacinco, seisadoce, treceadiecisiete, deporte, "superateintercolegiados", "1"];
+                    lista = [nombre, lugar, mes, dia, comuna, ano, cerocinco, seisdoce, trecediecisiete, dieciochoventiocho, ventiochomas, tipoevento, "eventosrecreando", "1"];
                     agregardatos(lista);
                 }
             });
 
         });
     </script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('#actualizadatos').click(function () {
-                id = $('#idSuperateA').val();
-                ceroacinco = $('#ceroAcincoA').val();
-                seisadoce = $('#seisAdoceA').val();
-                treceadiecisiete = $('#treceAsieteA').val();
-                deporte = $('#idDeporteA').val();
-                if (ceroacinco === "" || seisadoce === "" || treceadiecisiete === "" || deporte === 'opcionDeporte') {
+                id =  $('#idVisitaEscenarios').val();
+                nombre = $('#nombreA').val();
+                lugar = $('#lugarA').val();
+                mes = $('#mesA').val();
+                dia = $('#diaA').val();
+                ano = $('#anoA').val();
+                cerocinco = $('#ceroCincoA').val();
+                seisdoce = $('#seisDoceA').val();
+                trecediecisiete = $('#treceDiecisieteA').val();
+                dieciochoventiocho = $('#dieciochoVentiochoA').val();
+                ventiochomas = $('#ventiochoMasA').val();
+                comuna = $('#comunaA').val();
+                tipoevento = 'mesNinez';
+                if (nombre === "" || lugar === "" || dia === "" || mes === "" || ano === "" || cerocinco === "" || seisdoce === "" || trecediecisiete === "" || dieciochoventiocho === "" ||
+                        ventiochomas === "" || comuna === "opcionComuna") {
                     alertify.error("Por favor llene todos los campos");
                 } else {
-                    lista = [id,ceroacinco, seisadoce, treceadiecisiete, deporte, "superateintercolegiados", "2"];
+                    lista = [id,nombre, lugar, mes, dia, comuna, ano, cerocinco, seisdoce, trecediecisiete, dieciochoventiocho, ventiochomas, tipoevento, "eventosrecreando", "2"];
                     agregardatos(lista);
                 }
             });
 
         });
     </script>
-
 
 
 </body>

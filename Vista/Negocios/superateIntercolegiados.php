@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+include '../../Herramientas/Herramientas.php';
+include '../../Herramientas/Conexion.php';
+include '../../Herramientas/Combo.php';
+?>
 <html lang="en">
 
     <head>
@@ -8,14 +13,33 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>IMDERA</title>
-        <!-- Bootstrap core CSS-->
-        <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom fonts for this template-->
         <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-        <link href="../../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-        <!-- Custom styles for this template-->
+        <!-- Custom styles for this template-->     
         <link href="../../css/sb-admin.css" rel="stylesheet">
+        <link href="../../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+
+        <!--Funcionalidad-->
+        <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../Recursos/librerias/alertifyjs/css/alertify.css">
+        <link rel="stylesheet" type="text/css" href="../../Recursos/librerias/alertifyjs/css/themes/default.css">
+
+        <script src="../../Recursos/librerias/jquery-3.2.1.min.js"></script>
+        <script src="../../Controlador/CtlSuperate.js"></script>
+        <script src="../../Recursos/librerias/bootstrap/js/bootstrap.js"></script>
+        <script src="../../Recursos/librerias/alertifyjs/alertify.js"></script>
+
+        <script src="../../vendor/jquery/jquery.min.js"></script>
+        <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="../../vendor/datatables/jquery.dataTables.js"></script>
+        <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
+        <script src="../../js/sb-admin.min.js"></script>
+        <script src="../../js/sb-admin-datatables.min.js"></script>
+
 
 
     </head>
@@ -43,22 +67,22 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a id='z' href="mantenimiento1.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
+                                <a id='z' href="mantenimiento.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
                             </li>
                             <li>
-                                <a id='z' href="depEscolar1.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
+                                <a id='z' href="deporteEscolar.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
                             </li>
                             <li>
-                                <a id='z' href="recreandoComunidad1.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
+                                <a id='z' href="recreandoComunidad.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
                             </li>
                             <li>
-                                <a id='z' href="actividadF1.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
+                                <a id='z' href="actividadFisicaYHabitos.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
                             </li>
                             <li>
-                                <a id='z' href="deporteSocialC1.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
+                                <a id='z' href="deporteSocialComunitario.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
                             </li>
                             <li>
-                                <a id='z' href="apoyoAOrg1.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
+                                <a id='z' href="apoyoAOrganizacionesDeportivas.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
                             </li>
                         </ul>
 
@@ -109,28 +133,24 @@
         <div class="content-wrapper">
             <div class="container-fluid">
 
-                <h1>Apoyo a Organizaciones Deportivas - Eventos Deportivos</h1>
+                <h1>Deporte Escolar - Superate Intercolegiados</h1>
                 <hr>
                 <center>
                     <div class="row">
-                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="apoyoAOrg1.php" >Consolidado del programa</a>  </div>
+
+                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="deporteEscolar.php" >Consolidado del programa</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoAOrg2.php" >Prestamo de escenarios</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="escuelasDeportivas.php" >Escuelas deportivas</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoAOrg3.php" >Apoyo a organismos deportivos</a>  </div>
-                        <br>
-                        <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoAOrg4.php" >Eventos deportivos</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="superateIntercolegiados.php" >Superate intercolegiados</a>  </div>
                         <br>
                         <br>
                         <div id="tipo1" class="col-md-4">  <a data-toggle="modal" class="btn btn-outline-success"   data-target="#modalRegistro" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrar Nuevo&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
+
                     </div>
-                    
-                        
-                       
 
 
                 </center>
@@ -139,107 +159,9 @@
                 <br>
 
 
-
-
-
-
-                <!-- Example DataTables Card-->
-                <div class="card mb-3" >
-                    <div class="card-header">
-                        <i class="fa fa-table"></i> Tabla de Registros</div>
-                    <div class="card-body">
-                        <div class="table-responsive" >
-                            <table class="table table-bordered" id="dataTable" width="100%"   cellspacing="0">
-                                <thead>
-                                    <tr>
-
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                        <th>Editar</th>
-                                        <th>Eliminar</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
-                                        <th>Editar</th>
-                                        <th>Eliminar</th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    <tr>
-
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                        <td>
-                                            <button class="btn btn-warning " data-toggle="modal" data-target="#modalEdicion" >  <img src="../iconos/edit.svg" width="20" height="20">
-
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-danger" data-toggle="modal" data-target="#modalEliminacion">  <img src="../iconos/trash-alt.svg" width="20" height="20">  </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
-                                        <td><button class="btn btn-warning " data-toggle="modal" data-target="#modalEdicion" >  <img src="../iconos/edit.svg" width="20" height="20"> </button>
-                                        </td>
-                                        <td><button class="btn btn-danger" data-toggle="modal" data-target="#modalEliminacion">  <img src="../iconos/trash-alt.svg" width="20" height="20">  </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td>Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>$86,000</td>
-                                        <td> <button class="btn btn-warning " data-toggle="modal" data-target="#modalEdicion" >  <img src="../iconos/edit.svg" width="20" height="20"> </button>
-                                        </td>
-                                        <td> <button class="btn btn-danger" data-toggle="modal" data-target="#modalEliminacion">  <img src="../iconos/trash-alt.svg" width="20" height="20">  </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td>Cedric Kelly</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29</td>
-                                        <td>$433,060</td>
-                                        <td> <button class="btn btn-warning " data-toggle="modal" data-target="#modalEdicion" >  <img src="../iconos/edit.svg" width="20" height="20"> </button>
-                                        </td>
-                                        <td> <button class="btn btn-danger" data-toggle="modal" data-target="#modalEliminacion">  <img src="../iconos/trash-alt.svg" width="20" height="20">  </button>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
+                <div id="tablaSuperate">
                 </div>
+
             </div>
             <!-- /.container-fluid-->
             <!-- /.content-wrapper-->
@@ -311,15 +233,31 @@
                     <h4 class="modal-title" id="myModalLabel">Actualizar datos</h4>
                 </div>
                 <div class="modal-body">
-                    <input type="text" hidden="" id="idpersona" name="">
-                    <label>Nombre</label>
-                    <input type="text" name="" id="nombreu" class="form-control input-sm">
-                    <label>Apellido</label>
-                    <input type="text" name="" id="apellidou" class="form-control input-sm">
-                    <label>Email</label>
-                    <input type="text" name="" id="emailu" class="form-control input-sm">
-                    <label>telefono</label>
-                    <input type="text" name="" id="telefonou" class="form-control input-sm">
+                    <form>
+                        <label>ID</label>
+                        <input type="text" name="" id="idSuperateA" class="form-control input-sm" disabled="disable">
+                        <label>0 a 5</label>
+                        <input type="number" name="" id="ceroAcincoA" class="form-control input-sm">
+                        <label>6 a 12</label>
+                        <input type="number" name="" id="seisAdoceA" class="form-control input-sm">
+                        <label>13 a 17</label>
+                        <input type="number" name="" id="treceAsieteA" class="form-control input-sm">
+                        <label>Deporte</label>
+                        <select  id="idDeporteA" class="form-control input-sm">
+                            <option value="opcionDeporte">Seleccione un deporte</option>
+                            <?php
+                            $datos = comboListar("deporte");
+                            for ($index = 0; $index < count($datos); $index++) {
+                                for ($index1 = 0; $index1 < 1; $index1++) {
+                                    ?>
+                                    <option value="<?php echo $datos[$index][$index1] ?>">
+                                        <?php echo $datos[$index][$index1 + 1] ?></option>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </select>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="cancelar" data-dismiss="modal">Cancelar</button>
@@ -343,15 +281,29 @@
                     <h4 class="modal-title" id="myModalLabel">Registrar Datos</h4>
                 </div>
                 <div class="modal-body">
-                    <input type="text" hidden="" id="idpersona" name="">
-                    <label>Nombre</label>
-                    <input type="text" name="" id="nombreu" class="form-control input-sm">
-                    <label>Apellido</label>
-                    <input type="text" name="" id="apellidou" class="form-control input-sm">
-                    <label>Email</label>
-                    <input type="text" name="" id="emailu" class="form-control input-sm">
-                    <label>telefono</label>
-                    <input type="text" name="" id="telefonou" class="form-control input-sm">
+                    <form>
+                        <label>0 a 5</label>
+                        <input type="number" name="" id="ceroAcinco" class="form-control input-sm">
+                        <label>6 a 12</label>
+                        <input type="number" name="" id="seisAdoce" class="form-control input-sm">
+                        <label>13 a 17</label>
+                        <input type="number" name="" id="treceAsiete" class="form-control input-sm">
+                        <label>Deporte</label>
+                        <select  id="idDeporte" class="form-control input-sm">
+                            <option value="opcionDeporte">Seleccione un deporte</option>
+                            <?php
+                            $datos = comboListar("deporte");
+                            for ($index = 0; $index < count($datos); $index++) {
+                                for ($index1 = 0; $index1 < 1; $index1++) {
+                                    ?>
+                                    <option value="<?php echo $datos[$index][$index1] ?>">
+                                        <?php echo $datos[$index][$index1 + 1] ?></option>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </select>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="cancelar" data-dismiss="modal">Cancelar</button>
@@ -364,18 +316,7 @@
 
 
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="../../vendor/datatables/jquery.dataTables.js"></script>
-    <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
-    <script src="../../js/sb-admin.min.js"></script>
-    <script src="../../js/sb-admin-datatables.min.js"></script>
-    <!-- Custom scripts for this page-->
-    <!-- Toggle between fixed and static navbar-->
+
     <script>
         $('#toggleNavPosition').click(function () {
             $('body').toggleClass('fixed-nav');
@@ -391,6 +332,46 @@
             $('body').toggleClass('bg-dark bg-light');
         });
 
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#tablaSuperate').load('../Tablas/tablaEscenario.php', {tabla: 'superateintercolegiados', Eliminar: 'NO', Editar: 'SI'});
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#registradatos').click(function () {
+                ceroacinco = $('#ceroAcinco').val();
+                seisadoce = $('#seisAdoce').val();
+                treceadiecisiete = $('#treceAsiete').val();
+                deporte = $('#idDeporte').val();
+                if (ceroacinco === "" || seisadoce === "" || treceadiecisiete === "" || deporte === 'opcionDeporte') {
+                    alertify.error("Por favor llene todos los campos");
+                } else {
+                    lista = [ceroacinco, seisadoce, treceadiecisiete, deporte, "superateintercolegiados", "1"];
+                    agregardatos(lista);
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#actualizadatos').click(function () {
+                id = $('#idSuperateA').val();
+                ceroacinco = $('#ceroAcincoA').val();
+                seisadoce = $('#seisAdoceA').val();
+                treceadiecisiete = $('#treceAsieteA').val();
+                deporte = $('#idDeporteA').val();
+                if (ceroacinco === "" || seisadoce === "" || treceadiecisiete === "" || deporte === 'opcionDeporte') {
+                    alertify.error("Por favor llene todos los campos");
+                } else {
+                    lista = [id,ceroacinco, seisadoce, treceadiecisiete, deporte, "superateintercolegiados", "2"];
+                    agregardatos(lista);
+                }
+            });
+
+        });
     </script>
 
 

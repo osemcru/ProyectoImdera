@@ -1,3 +1,4 @@
+
 <?php
 $connect = mysqli_connect("localhost", "root", "", "testing");
 $query = "SELECT gender, count(*) as number FROM tbl_employee GROUP BY gender";
@@ -54,22 +55,22 @@ $resulta = mysqli_query($connecta, $quera);
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a id='z' href="mantenimiento1.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
+                                <a id='z' href="mantenimiento.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
                             </li>
                             <li>
-                                <a id='z' href="depEscolar1.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
+                                <a id='z' href="deporteEscolar.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
                             </li>
                             <li>
-                                <a id='z' href="recreandoComunidad1.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
+                                <a id='z' href="recreandoComunidad.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
                             </li>
                             <li>
-                                <a id='z' href="actividadF1.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
+                                <a id='z' href="actividadFisicaYHabitos.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
                             </li>
                             <li>
-                                <a id='z' href="deporteSocialC1.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
+                                <a id='z' href="deporteSocialComunitario.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
                             </li>
                             <li>
-                                <a id='z' href="apoyoAOrg1.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
+                                <a id='z' href="apoyoAOrganizacionesDeportivas.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
                             </li>
                         </ul>
 
@@ -122,35 +123,20 @@ $resulta = mysqli_query($connecta, $quera);
           
 
 
-                <h1>Recreando Comunidad - Consolidado del Programa</h1>
+                <h1>Apoyo a Organizaciones Deportivas - Consolidado del Programa</h1>
                 <hr>
                 <center>
                     <div class="row">
-                        <div id="tipo1" class="col-md-4" >  <a class="btn btn-primary" href="recreandoComunidad1.php" >&nbsp;&nbsp;&nbsp;&nbsp;Consolidado del programa&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1" class="col-md-4">  <a class="btn btn-primary" href="apoyoAOrganizacionesDeportivas.php" >Consolidado del programa</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad2.php" >&nbsp;&nbsp;&nbsp;Programa del adulto mayor&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="prestamoDeEscenarios.php" >Prestamo de escenarios</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad3.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recreación en comunas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoAOrganismosDeportivos.php" >Apoyo a organismos deportivos</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad4.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visitas a escenarios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
-                        <br>
-                        <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad5.php" >Apoyo a centros penitenciarios</a>  </div>
-                        <br>
-                        <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad6.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mes de la niñez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
-                        <br>
-                        <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad7.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vacaciones recreativas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
-                        <br>
-                        <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad8.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventos recreativos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
-                        <br>
-                        <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad9.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moviteca&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="eventosDeportivos.php" >Eventos deportivos</a>  </div>
                         <br>
                     </div>
 
@@ -387,4 +373,3 @@ while ($rowa = mysqli_fetch_array($resulta)) {
 </body>
 
 </html>
-

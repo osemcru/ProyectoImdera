@@ -69,22 +69,22 @@ if (isset($_SESSION['usuarios']) && ($_SESSION['usuarios']=='Administrador' || $
                                 </a>
                                 <ul class="sidenav-second-level collapse" id="collapseComponents">
                                     <li>
-                                        <a id='z' href="Negocios/mantenimiento1.php">  <i class="icono izquierda"> <img src="iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
+                                        <a id='z' href="Negocios/mantenimiento.php">  <i class="icono izquierda"> <img src="iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
                                     </li>
                                     <li>
-                                        <a id='z' href="Negocios/depEscolar1.php"><i class="icono izquierda "> <img src="iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
+                                        <a id='z' href="Negocios/deporteEscolar.php"><i class="icono izquierda "> <img src="iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
                                     </li>
                                     <li>
-                                        <a id='z' href="Negocios/recreandoComunidad1.php"><i class="icono izquierda"> <img src="iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
+                                        <a id='z' href="Negocios/recreandoComunidad.php"><i class="icono izquierda"> <img src="iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
                                     </li>
                                     <li>
-                                        <a id='z' href="Negocios/actividadF1.php"><i class="icono izquierda">  <img src="iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
+                                        <a id='z' href="Negocios/actividadFisicaYHabitos.php"><i class="icono izquierda">  <img src="iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
                                     </li>
                                     <li>
-                                        <a id='z' href="Negocios/deporteSocialC1.php"><i class="icono izquierda"> <img src="iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
+                                        <a id='z' href="Negocios/deporteSocialComunitario.php"><i class="icono izquierda"> <img src="iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
                                     </li>
                                     <li>
-                                        <a id='z' href="Negocios/apoyoAOrg1.php"><i class="icono izquierda"> <img src="iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
+                                        <a id='z' href="Negocios/apoyoAOrganizacionesDeportivas.php"><i class="icono izquierda"> <img src="iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
                                     </li>
 
                                 </ul>

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>IMDERA</title>
+       <title>IMDERA</title>
         <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- Custom styles for this template-->     
@@ -21,7 +21,7 @@
         <link rel="stylesheet" type="text/css" href="../../Recursos/librerias/alertifyjs/css/themes/default.css">
 
         <script src="../../Recursos/librerias/jquery-3.2.1.min.js"></script>
-        <script src="../../Controlador/CtlVacacionesRecreativas.js"></script>
+        <script src="../../Controlador/CtlEventosRecreativos.js"></script>
         <script src="../../Recursos/librerias/bootstrap/js/bootstrap.js"></script>
         <script src="../../Recursos/librerias/alertifyjs/alertify.js"></script>
 
@@ -34,7 +34,6 @@
         <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
         <script src="../../js/sb-admin.min.js"></script>
         <script src="../../js/sb-admin-datatables.min.js"></script>
-
 
     </head>
 
@@ -61,22 +60,22 @@
                         </a>
                         <ul class="sidenav-second-level collapse" id="collapseComponents">
                             <li>
-                                <a id='z' href="mantenimiento1.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
+                                <a id='z' href="mantenimiento.php">  <i class="icono izquierda"> <img src="../iconos/wrench.svg" width="20" height="20">  </i>Mantenimiento</a>
                             </li>
                             <li>
-                                <a id='z' href="depEscolar1.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
+                                <a id='z' href="deporteEscolar.php"><i class="icono izquierda "> <img src="../iconos/volleyball-ball.svg" width="20" height="20"> </i>Deporte Escolar</a>
                             </li>
                             <li>
-                                <a id='z' href="recreandoComunidad1.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
+                                <a id='z' href="recreandoComunidad.php"><i class="icono izquierda"> <img src="../iconos/users.svg" width="20" height="20">  </i>Recreando Comunidad</a>
                             </li>
                             <li>
-                                <a id='z' href="actividadF1.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
+                                <a id='z' href="actividadFisicaYHabitos.php"><i class="icono izquierda">  <img src="../iconos/heartbeat.svg " width="20" height="20">   </i>Actividad Fis y Habitos</a>
                             </li>
                             <li>
-                                <a id='z' href="deporteSocialC1.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
+                                <a id='z' href="deporteSocialComunitario.php"><i class="icono izquierda"> <img src="../iconos/people-carry.svg" width="20" height="20">  </i>Dep Soc Comunitario</a>
                             </li>
                             <li>
-                                <a id='z' href="apoyoAOrg1.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
+                                <a id='z' href="apoyoAOrganizacionesDeportivas.php"><i class="icono izquierda"> <img src="../iconos/handshake.svg " width="20" height="20"> </i>Apoyo a Org</a>
                             </li>
                         </ul>
 
@@ -127,39 +126,41 @@
         <div class="content-wrapper">
             <div class="container-fluid">
 
-                <h1>Recreando Comunidad - Vacaciones Recreativas</h1>
+                <h1>Recreando Comunidad - Eventos Recreativos</h1>
                 <hr>
                 <center>
                     <div class="row">
-                        <div id="tipo1" class="col-md-4" >  <a class="btn btn-primary" href="recreandoComunidad1.php" >&nbsp;&nbsp;&nbsp;&nbsp;Consolidado del programa&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1" class="col-md-4" >  <a class="btn btn-primary" href="recreandoComunidad.php" >&nbsp;&nbsp;&nbsp;&nbsp;Consolidado del programa&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad2.php" >&nbsp;&nbsp;&nbsp;Programa del adulto mayor&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="programaAdultoMayor.php" >&nbsp;&nbsp;&nbsp;Programa del adulto mayor&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad3.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recreación en comunas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreacionEnComunas.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recreación en comunas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad4.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visitas a escenarios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="visitasAEscenarios.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visitas a escenarios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad5.php" >Apoyo a centros penitenciarios</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="apoyoCentrosPenitenciarios.php" >Apoyo a centros penitenciarios</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad6.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mes de la niñez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="mesDeLaNinez.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mes de la niñez&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad7.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vacaciones recreativas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="vacacionesRecreativas.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vacaciones recreativas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad8.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventos recreativos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="eventosRecreativos.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventos recreativos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
-                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="recreandoComunidad9.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moviteca&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+                        <div id="tipo1"  class="col-md-4">  <a class="btn btn-primary" href="moviteca.php" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moviteca&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
                         <br>
                         <br>
                         <div id="tipo1" class="col-md-4">  <a data-toggle="modal" class="btn btn-outline-success"   data-target="#modalRegistro" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registrar Nuevo&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>  </div>
+
                     </div>
+
 
 
                 </center>
@@ -172,10 +173,9 @@
 
 
 
-                <div id="tablaVacacionesRecreativas" >
+                <!-- Example DataTables Card-->
+               <div id="tablaEventosRecreativos" >
                 </div>
-
-
             </div>
             <!-- /.container-fluid-->
             <!-- /.content-wrapper-->
@@ -383,7 +383,7 @@
 
  <script type="text/javascript">
         $(document).ready(function () {
-            $('#tablaVacacionesRecreativas').load('../Tablas/tablaEscenario.php', {tabla: 'vacacionesRecreativas', Eliminar: 'SI', Editar: 'SI'});
+            $('#tablaEventosRecreativos').load('../Tablas/tablaEscenario.php', {tabla: 'eventosRecreativos', Eliminar: 'SI', Editar: 'SI'});
         });
     </script>
     <script type="text/javascript">
@@ -400,7 +400,7 @@
                 dieciochoventiocho = $('#dieciochoVentiocho').val();
                 ventiochomas = $('#ventiochoMas').val();
                 comuna = $('#comuna').val();
-                tipoevento = 'vacacionesRecreativas';
+                tipoevento = 'eventosRecreativos';
                 if (nombre === "" || lugar === "" || dia === "" || mes === "" || ano === "" || cerocinco === "" || seisdoce === "" || trecediecisiete === "" || dieciochoventiocho === "" ||
                         ventiochomas === "" || comuna === "opcionComuna") {
                     alertify.error("Por favor llene todos los campos");
@@ -428,7 +428,7 @@
                 dieciochoventiocho = $('#dieciochoVentiochoA').val();
                 ventiochomas = $('#ventiochoMasA').val();
                 comuna = $('#comunaA').val();
-                tipoevento = 'vacacionesRecreativas';
+                tipoevento = 'eventosRecreativos';
                 if (nombre === "" || lugar === "" || dia === "" || mes === "" || ano === "" || cerocinco === "" || seisdoce === "" || trecediecisiete === "" || dieciochoventiocho === "" ||
                         ventiochomas === "" || comuna === "opcionComuna") {
                     alertify.error("Por favor llene todos los campos");
